@@ -3,12 +3,12 @@
 namespace Stephenjude\BlocPhpSdk;
 
 use Exception;
+use Psr\Http\Message\ResponseInterface;
 use Stephenjude\BlocPhpSdk\Exceptions\BadRequestException;
 use Stephenjude\BlocPhpSdk\Exceptions\ForbiddenRequestException;
 use Stephenjude\BlocPhpSdk\Exceptions\NotFoundException;
-use Stephenjude\BlocPhpSdk\Exceptions\UnauthorizedException;
 use Stephenjude\BlocPhpSdk\Exceptions\TooManyRequestException;
-use Psr\Http\Message\ResponseInterface;
+use Stephenjude\BlocPhpSdk\Exceptions\UnauthorizedException;
 
 trait MakesHttpRequests
 {
@@ -40,7 +40,7 @@ trait MakesHttpRequests
             empty($payload) ? [] : ['form_params' => $payload]
         );
 
-        if (!$this->isSuccessful($response)) {
+        if (! $this->isSuccessful($response)) {
             return $this->handleRequestError($response);
         }
 
@@ -51,7 +51,7 @@ trait MakesHttpRequests
 
     public function isSuccessful($response): bool
     {
-        if (!$response) {
+        if (! $response) {
             return false;
         }
 

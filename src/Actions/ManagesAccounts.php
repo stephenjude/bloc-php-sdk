@@ -2,7 +2,6 @@
 
 namespace Stephenjude\BlocPhpSdk\Actions;
 
-use Stephenjude\BlocPhpSdk\Resources\Account;
 use Stephenjude\BlocPhpSdk\Resources\CollectionAccount;
 
 trait ManagesAccounts

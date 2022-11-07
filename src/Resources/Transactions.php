@@ -31,5 +31,4 @@ class Transactions extends ApiResource
     public string $accountId;
 
     public string $metaData;
-
 }

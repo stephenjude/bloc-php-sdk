@@ -2,10 +2,9 @@
 
 namespace Stephenjude\BlocPhpSdk\Resources;
 
-use Stephenjude\BlocPhpSdk\Bloc;
-use Stephenjude\BlocPhpSdk\Stephenjude;
 use ReflectionObject;
 use ReflectionProperty;
+use Stephenjude\BlocPhpSdk\Bloc;
 
 class ApiResource
 {

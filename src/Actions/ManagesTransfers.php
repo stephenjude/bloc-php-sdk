@@ -2,13 +2,11 @@
 
 namespace Stephenjude\BlocPhpSdk\Actions;
 
-use Stephenjude\BlocPhpSdk\Resources\CollectionAccount;
 use Stephenjude\BlocPhpSdk\Resources\CronCheck;
 use Stephenjude\BlocPhpSdk\Resources\Transfer;
 
 trait ManagesTransfers
 {
-
     public function transferFromOrgBalance()
     {
         $transfer = $this->post("accounts/collections");

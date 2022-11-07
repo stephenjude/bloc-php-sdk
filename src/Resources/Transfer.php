@@ -17,5 +17,4 @@ class Transfer extends ApiResource
     public string $status;
 
     public string $createAt;
-
 }

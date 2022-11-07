@@ -5,7 +5,6 @@ namespace Stephenjude\BlocPhpSdk;
 use Carbon\Carbon;
 use GuzzleHttp\Client;
 use Stephenjude\BlocPhpSdk\Actions\ManagesAccounts;
-use Stephenjude\BlocPhpSdk\Actions\ManagesTransfers;
 
 class Bloc
 {
