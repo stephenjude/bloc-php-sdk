@@ -2,8 +2,8 @@
     "name": "stephenjude/blochq-php-sdk",
     "description": "An SDK to easily work with the BlocHQ API",
     "keywords": [
-        "oh dear",
-        "monitoring",
+        "blochq",
+        "bank",
         "api",
         "sdk"
     ],
