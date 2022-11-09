@@ -2,14 +2,10 @@
 
 namespace Stephenjude\BlocHqPhpSdk\Actions;
 
-use Stephenjude\BlocHqPhpSdk\Resources\CollectionAccount;
-use Stephenjude\BlocHqPhpSdk\Resources\CronCheck;
 use Stephenjude\BlocHqPhpSdk\Resources\Transaction;
-use Stephenjude\BlocHqPhpSdk\Resources\Transfer;
 
 trait ManagesTransactions
 {
-
     public function getAllTransactions(): array
     {
         $transactions = $this->get("transactions");
@@ -33,5 +29,4 @@ trait ManagesTransactions
 
         return new Transaction($transaction['data'], $this);
     }
-
 }

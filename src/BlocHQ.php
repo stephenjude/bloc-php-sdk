@@ -2,7 +2,6 @@
 
 namespace Stephenjude\BlocHqPhpSdk;
 
-use Carbon\Carbon;
 use GuzzleHttp\Client;
 use Stephenjude\BlocHqPhpSdk\Actions\ManagesAccounts;
 use Stephenjude\BlocHqPhpSdk\Actions\ManagesBanks;

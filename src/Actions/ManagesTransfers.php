@@ -2,13 +2,10 @@
 
 namespace Stephenjude\BlocHqPhpSdk\Actions;
 
-use Stephenjude\BlocHqPhpSdk\Resources\CollectionAccount;
-use Stephenjude\BlocHqPhpSdk\Resources\CronCheck;
 use Stephenjude\BlocHqPhpSdk\Resources\Transfer;
 
 trait ManagesTransfers
 {
-
     public function transferFromOrgBalance(
         int $amount,
         string $accountNumber,

@@ -2,7 +2,7 @@
 
 namespace Stephenjude\BlocHqPhpSdk\Resources;
 
-class  BankAccount extends ApiResource
+class BankAccount extends ApiResource
 {
     public string $accountName;
 

@@ -2,11 +2,8 @@
 
 namespace Stephenjude\BlocHqPhpSdk\Actions;
 
-use Stephenjude\BlocHqPhpSdk\Resources\Account;
 use Stephenjude\BlocHqPhpSdk\Resources\Bank;
 use Stephenjude\BlocHqPhpSdk\Resources\BankAccount;
-use Stephenjude\BlocHqPhpSdk\Resources\CollectionAccount;
-use Stephenjude\BlocHqPhpSdk\Resources\Transaction;
 
 trait ManagesBanks
 {
