@@ -30,10 +30,10 @@ $blocHQ = new \Stephenjude\BlocHqPhpSdk\BlocHQ(TOKEN_HERE);
 $blocHQ->createCollectionAccount();
 ```
 
-#### Mange Transfers
+#### Manage Transfers
 
 ```php
-$blocHQ->transferFromOrgBalance(AMOUNT,ACCOUNT_NUMBER, BANK_CODE,NARRATION,[META_DATA]);
+$blocHQ->transferFromOrgBalance(AMOUNT, ACCOUNT_NUMBER, BANK_CODE, NARRATION, [META_DATA]);
 ```
 
 #### Manage Transactions
