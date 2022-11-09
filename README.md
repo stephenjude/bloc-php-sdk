@@ -7,6 +7,13 @@
 This SDK lets you perform API calls to [Bloc APIs](https://blochq.io).
 
 ## Documentation
+### Installation
+
+To install the SDK in your project you need to require the package via composer:
+
+```bash
+composer require stephenjude/blochq-php-sdk
+```
 
 All documentation, including examples and installation instructions, can be found on [Bloc API reference](https://docs.blochq.io/reference).
 
