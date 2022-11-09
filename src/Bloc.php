@@ -5,12 +5,17 @@ namespace Stephenjude\BlocPhpSdk;
 use Carbon\Carbon;
 use GuzzleHttp\Client;
 use Stephenjude\BlocPhpSdk\Actions\ManagesAccounts;
+use Stephenjude\BlocPhpSdk\Actions\ManagesBanks;
+use Stephenjude\BlocPhpSdk\Actions\ManagesTransactions;
 use Stephenjude\BlocPhpSdk\Actions\ManagesTransfers;
 
 class Bloc
 {
     use MakesHttpRequests;
+    use ManagesBanks;
     use ManagesAccounts;
+    use ManagesTransfers;
+    use ManagesTransactions;
 
     /** @var string */
     public string $apiToken;

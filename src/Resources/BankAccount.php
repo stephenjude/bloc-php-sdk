@@ -2,11 +2,11 @@
 
 namespace Stephenjude\BlocPhpSdk\Resources;
 
-class Recipient extends ApiResource
+class  BankAccount extends ApiResource
 {
-    public string $accountNumber;
-
     public string $accountName;
+
+    public string $accountNumber;
 
     public string $bankCode;
 }

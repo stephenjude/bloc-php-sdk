@@ -2,7 +2,7 @@
 
 namespace Stephenjude\BlocPhpSdk\Resources;
 
-class Transactions extends ApiResource
+class Transaction extends ApiResource
 {
     public string $transactionId;
 
@@ -31,5 +31,4 @@ class Transactions extends ApiResource
     public string $accountId;
 
     public string $metaData;
-
 }
