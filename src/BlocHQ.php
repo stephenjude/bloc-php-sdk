@@ -1,13 +1,13 @@
 <?php
 
-namespace Stephenjude\BlocPhpSdk;
+namespace Stephenjude\BlocHqPhpSdk;
 
 use Carbon\Carbon;
 use GuzzleHttp\Client;
-use Stephenjude\BlocPhpSdk\Actions\ManagesAccounts;
-use Stephenjude\BlocPhpSdk\Actions\ManagesBanks;
-use Stephenjude\BlocPhpSdk\Actions\ManagesTransactions;
-use Stephenjude\BlocPhpSdk\Actions\ManagesTransfers;
+use Stephenjude\BlocHqPhpSdk\Actions\ManagesAccounts;
+use Stephenjude\BlocHqPhpSdk\Actions\ManagesBanks;
+use Stephenjude\BlocHqPhpSdk\Actions\ManagesTransactions;
+use Stephenjude\BlocHqPhpSdk\Actions\ManagesTransfers;
 
 class BlocHQ
 {

@@ -1,11 +1,11 @@
 <?php
 
-namespace Stephenjude\BlocPhpSdk\Tests;
+namespace Stephenjude\BlocHqPhpSdk\Tests;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\Psr7\Response;
 use Mockery;
-use Stephenjude\BlocPhpSdk\BlocHQ;
+use Stephenjude\BlocHqPhpSdk\BlocHQ;
 
 class BlocSdkTest extends TestCase
 {

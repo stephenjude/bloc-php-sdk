@@ -1,12 +1,12 @@
 <?php
 
-namespace Stephenjude\BlocPhpSdk\Tests;
+namespace Stephenjude\BlocHqPhpSdk\Tests;
 
 use \PHPUnit\Framework\TestCase as BaseTestCase;
 use Dotenv\Dotenv;
 use GuzzleHttp\Client;
-use Stephenjude\BlocPhpSdk\BlocHQ;
-use Stephenjude\BlocPhpSdk\Stephenjude;
+use Stephenjude\BlocHqPhpSdk\BlocHQ;
+use Stephenjude\BlocHqPhpSdk\Stephenjude;
 
 abstract class TestCase extends BaseTestCase
 {

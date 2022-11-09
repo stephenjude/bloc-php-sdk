@@ -1,6 +1,6 @@
 {
-    "name": "stephenjude/bloc-php-sdk",
-    "description": "An SDK to easily work with the Oh Dear API",
+    "name": "stephenjude/blochq-php-sdk",
+    "description": "An SDK to easily work with the BlocHQ API",
     "keywords": [
         "oh dear",
         "monitoring",
@@ -29,12 +29,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Stephenjude\\BlocPhpSdk\\": "src"
+            "Stephenjude\\BlocHqPhpSdk\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Stephenjude\\BlocPhpSdk\\Tests\\": "tests"
+            "Stephenjude\\BlocHqPhpSdk\\Tests\\": "tests"
         }
     },
     "scripts": {

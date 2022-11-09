@@ -1,11 +1,11 @@
 <?php
 
-namespace Stephenjude\BlocPhpSdk\Actions;
+namespace Stephenjude\BlocHqPhpSdk\Actions;
 
-use Stephenjude\BlocPhpSdk\Resources\CollectionAccount;
-use Stephenjude\BlocPhpSdk\Resources\CronCheck;
-use Stephenjude\BlocPhpSdk\Resources\Transaction;
-use Stephenjude\BlocPhpSdk\Resources\Transfer;
+use Stephenjude\BlocHqPhpSdk\Resources\CollectionAccount;
+use Stephenjude\BlocHqPhpSdk\Resources\CronCheck;
+use Stephenjude\BlocHqPhpSdk\Resources\Transaction;
+use Stephenjude\BlocHqPhpSdk\Resources\Transfer;
 
 trait ManagesTransactions
 {

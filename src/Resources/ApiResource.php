@@ -1,9 +1,9 @@
 <?php
 
-namespace Stephenjude\BlocPhpSdk\Resources;
+namespace Stephenjude\BlocHqPhpSdk\Resources;
 
-use Stephenjude\BlocPhpSdk\BlocHQ;
-use Stephenjude\BlocPhpSdk\Stephenjude;
+use Stephenjude\BlocHqPhpSdk\BlocHQ;
+use Stephenjude\BlocHqPhpSdk\Stephenjude;
 use ReflectionObject;
 use ReflectionProperty;
 

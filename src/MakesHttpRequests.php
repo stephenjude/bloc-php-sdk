@@ -1,14 +1,14 @@
 <?php
 
-namespace Stephenjude\BlocPhpSdk;
+namespace Stephenjude\BlocHqPhpSdk;
 
 use Exception;
 use Psr\Http\Message\ResponseInterface;
-use Stephenjude\BlocPhpSdk\Exceptions\BadRequestException;
-use Stephenjude\BlocPhpSdk\Exceptions\ForbiddenRequestException;
-use Stephenjude\BlocPhpSdk\Exceptions\NotFoundException;
-use Stephenjude\BlocPhpSdk\Exceptions\TooManyRequestException;
-use Stephenjude\BlocPhpSdk\Exceptions\UnauthorizedException;
+use Stephenjude\BlocHqPhpSdk\Exceptions\BadRequestException;
+use Stephenjude\BlocHqPhpSdk\Exceptions\ForbiddenRequestException;
+use Stephenjude\BlocHqPhpSdk\Exceptions\NotFoundException;
+use Stephenjude\BlocHqPhpSdk\Exceptions\TooManyRequestException;
+use Stephenjude\BlocHqPhpSdk\Exceptions\UnauthorizedException;
 
 trait MakesHttpRequests
 {

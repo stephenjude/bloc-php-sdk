@@ -1,6 +1,6 @@
 <?php
 
-namespace Stephenjude\BlocPhpSdk\Exceptions;
+namespace Stephenjude\BlocHqPhpSdk\Exceptions;
 
 use Exception;
 

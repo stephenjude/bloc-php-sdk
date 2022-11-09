@@ -1,8 +1,8 @@
 <?php
 
-namespace Stephenjude\BlocPhpSdk\Actions;
+namespace Stephenjude\BlocHqPhpSdk\Actions;
 
-use Stephenjude\BlocPhpSdk\Resources\CollectionAccount;
+use Stephenjude\BlocHqPhpSdk\Resources\CollectionAccount;
 
 trait ManagesAccounts
 {

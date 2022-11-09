@@ -1,12 +1,12 @@
 <?php
 
-namespace Stephenjude\BlocPhpSdk\Actions;
+namespace Stephenjude\BlocHqPhpSdk\Actions;
 
-use Stephenjude\BlocPhpSdk\Resources\Account;
-use Stephenjude\BlocPhpSdk\Resources\Bank;
-use Stephenjude\BlocPhpSdk\Resources\BankAccount;
-use Stephenjude\BlocPhpSdk\Resources\CollectionAccount;
-use Stephenjude\BlocPhpSdk\Resources\Transaction;
+use Stephenjude\BlocHqPhpSdk\Resources\Account;
+use Stephenjude\BlocHqPhpSdk\Resources\Bank;
+use Stephenjude\BlocHqPhpSdk\Resources\BankAccount;
+use Stephenjude\BlocHqPhpSdk\Resources\CollectionAccount;
+use Stephenjude\BlocHqPhpSdk\Resources\Transaction;
 
 trait ManagesBanks
 {
