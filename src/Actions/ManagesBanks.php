@@ -15,8 +15,8 @@ trait ManagesBanks
         $banks = $this->get("banks");
 
         return $this->transformCollection(
-            $banks,
-            Bank::class,
+            collection: $banks['data'],
+            class: Bank::class,
         );
     }
 

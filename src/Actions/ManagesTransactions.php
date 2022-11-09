@@ -15,8 +15,8 @@ trait ManagesTransactions
         $transactions = $this->get("transactions");
 
         return $this->transformCollection(
-            $transactions,
-            Transaction::class,
+            collection:$transactions['data'],
+            class:Transaction::class,
         );
     }
 
@@ -24,14 +24,14 @@ trait ManagesTransactions
     {
         $transaction = $this->get("transactions/$transactionId");
 
-        return new Transaction($transaction, $this);
+        return new Transaction($transaction['data'], $this);
     }
 
     public function getTransactionByReference(string $transactionReference): Transaction
     {
         $transaction = $this->get("transactions/reference/$transactionReference");
 
-        return new Transaction($transaction, $this);
+        return new Transaction($transaction['data'], $this);
     }
 
 }

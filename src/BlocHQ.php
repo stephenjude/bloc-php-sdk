@@ -9,7 +9,7 @@ use Stephenjude\BlocPhpSdk\Actions\ManagesBanks;
 use Stephenjude\BlocPhpSdk\Actions\ManagesTransactions;
 use Stephenjude\BlocPhpSdk\Actions\ManagesTransfers;
 
-class Bloc
+class BlocHQ
 {
     use MakesHttpRequests;
     use ManagesBanks;
@@ -49,10 +49,5 @@ class Bloc
         return array_map(function ($attributes) use ($class) {
             return new $class($attributes, $this);
         }, $collection);
-    }
-
-    public function convertDateFormat(string $date, $format = 'YmdHis'): string
-    {
-        return Carbon::parse($date)->format($format);
     }
 }

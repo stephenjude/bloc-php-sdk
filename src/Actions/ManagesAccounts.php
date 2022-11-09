@@ -11,6 +11,6 @@ trait ManagesAccounts
     {
         $account = $this->post("accounts/collections");
 
-        return new CollectionAccount($account, $this);
+        return new CollectionAccount($account['data'], $this);
     }
 }

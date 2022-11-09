@@ -2,7 +2,7 @@
 
 namespace Stephenjude\BlocPhpSdk\Resources;
 
-use Stephenjude\BlocPhpSdk\Bloc;
+use Stephenjude\BlocPhpSdk\BlocHQ;
 use Stephenjude\BlocPhpSdk\Stephenjude;
 use ReflectionObject;
 use ReflectionProperty;
@@ -11,9 +11,9 @@ class ApiResource
 {
     public array $attributes = [];
 
-    protected ?Bloc $bloc;
+    protected ?BlocHQ $bloc;
 
-    public function __construct(array $attributes, Bloc $bloc = null)
+    public function __construct(array $attributes, BlocHQ $bloc = null)
     {
         $this->attributes = $attributes;
 

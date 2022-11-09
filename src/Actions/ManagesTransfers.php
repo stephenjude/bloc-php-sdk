@@ -24,6 +24,6 @@ trait ManagesTransfers
             'metaData' => $metaData,
         ]);
 
-        return new Transfer($transfer, $this);
+        return new Transfer($transfer['data'], $this);
     }
 }

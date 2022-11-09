@@ -5,11 +5,12 @@ namespace Stephenjude\BlocPhpSdk\Tests;
 use \PHPUnit\Framework\TestCase as BaseTestCase;
 use Dotenv\Dotenv;
 use GuzzleHttp\Client;
+use Stephenjude\BlocPhpSdk\BlocHQ;
 use Stephenjude\BlocPhpSdk\Stephenjude;
 
 abstract class TestCase extends BaseTestCase
 {
-    protected Stephenjude $ohDear;
+    protected BlocHQ $bloc;
 
     public function setUp(): void
     {
@@ -20,7 +21,7 @@ abstract class TestCase extends BaseTestCase
         $apiToken = env('API_TOKEN');
 
         $client = new Client([
-            'base_uri' => env('OH_DEAR_API_URL', 'https://ohdear.app.test/api/'),
+            'base_uri' => env('BLOC_HQ_API_URL', 'https://api.blochq.io.test/v1/'),
             'verify' => false,
             'http_errors' => false,
             'headers' => [
@@ -30,9 +31,9 @@ abstract class TestCase extends BaseTestCase
             ],
         ]);
 
-        $this->ohDear = new Stephenjude($apiToken);
+        $this->bloc = new BlocHQ($apiToken);
 
-        $this->ohDear->setClient($client);
+        $this->bloc->setClient($client);
     }
 
     protected function loadEnvironmentVariables()

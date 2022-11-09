@@ -6,7 +6,7 @@
     </include>
   </coverage>
   <testsuites>
-    <testsuite name="Stephenjude Test Suite">
+    <testsuite name="BlocHQ SDK Test Suite">
       <directory>tests</directory>
     </testsuite>
   </testsuites>
