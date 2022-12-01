@@ -21,6 +21,6 @@ trait ManagesBanks
     {
         $bankAccount = $this->get("resolve-account?account_number=$accountNumber&bank_code=$bankCode");
 
-        return new BankAccount($bankAccount, $this);
+        return new BankAccount($bankAccount['data'], $this);
     }
 }
