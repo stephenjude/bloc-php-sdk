@@ -16,7 +16,7 @@ trait ManagesAccounts
 
     public function getAccountByAccountNumber(string $accountNumber): Account
     {
-        $account = $this->post("accounts/number/$accountNumber");
+        $account = $this->get("accounts/number/$accountNumber");
 
         return new Account($account['data'], $this);
     }
