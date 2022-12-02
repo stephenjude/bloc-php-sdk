@@ -22,7 +22,7 @@ class Account extends ApiResource
 
     public string $currency;
 
-    public string $metaData;
+    public ?string $metaData;
 
     public string $customerId;
 
