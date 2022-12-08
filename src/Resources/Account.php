@@ -71,6 +71,9 @@ class Account extends ApiResource
     }
 
 
+    /**
+     * @description  This endpoint is for simulation.
+     */
     public function credit(int $amount): bool
     {
         $payload = array_filter([
@@ -83,6 +86,9 @@ class Account extends ApiResource
         return (bool)$response['success'];
     }
 
+    /**
+     * @description  This endpoint is for simulation.
+     */
     public function debit(int $amount): bool
     {
         $payload = array_filter([
@@ -90,7 +96,7 @@ class Account extends ApiResource
             'account_id' => $this->id,
         ]);
 
-        $response = $this->bloc->put("accounts/credit/manual", $payload);
+        $response = $this->bloc->put("accounts/debit/manual", $payload);
 
         return (bool)$response['success'];
     }
