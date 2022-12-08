@@ -69,4 +69,29 @@ class Account extends ApiResource
 
         return (bool) $response['success'];
     }
+
+
+    public function credit(int $amount): bool
+    {
+        $payload = array_filter([
+            'amount' => $amount,
+            'account_id' => $this->id,
+        ]);
+
+        $response = $this->bloc->put("accounts/credit/manual", $payload);
+
+        return (bool)$response['success'];
+    }
+
+    public function debit(int $amount): bool
+    {
+        $payload = array_filter([
+            'amount' => $amount,
+            'account_id' => $this->id,
+        ]);
+
+        $response = $this->bloc->put("accounts/credit/manual", $payload);
+
+        return (bool)$response['success'];
+    }
 }

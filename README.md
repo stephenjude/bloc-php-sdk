@@ -30,6 +30,19 @@ $blocHQ = new \Stephenjude\BlocHqPhpSdk\BlocHQ(TOKEN_HERE);
 $blocHQ->createCollectionAccount();
 ```
 
+```php 
+$account = $blocHQ->getAccountByAccountNumber(ACCOUNT_NUMBER);
+
+$account->freeze();
+$account->unfreeze();
+
+$account->close();
+$account->reopen();
+
+$account->credit(AMOUNT); // Simulation endpoint
+$account->debit(AMOUNT); // Simulation endpoint
+```
+
 #### Manage Transfers
 
 ```php
