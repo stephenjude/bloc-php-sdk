@@ -31,4 +31,10 @@ class Transaction extends ApiResource
     public string $accountId;
 
     public string $metaData;
+
+    public string $reversal;
+
+    public string $paymentMethod;
+
+    public string $currentAccountBalance;
 }
