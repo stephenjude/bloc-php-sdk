@@ -6,9 +6,9 @@ use Stephenjude\BlocHqPhpSdk\Resources\Transaction;
 
 trait ManagesTransactions
 {
-    public function getAllTransactions(): array
+    public function getAllTransactions(array $queryOptions = []): array
     {
-        $transactions = $this->get("transactions");
+        $transactions = $this->get("transactions", $queryOptions);
 
         return $this->transformCollection(
             collection:$transactions['data'],
