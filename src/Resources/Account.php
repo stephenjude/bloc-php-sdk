@@ -70,7 +70,6 @@ class Account extends ApiResource
         return (bool) $response['success'];
     }
 
-
     /**
      * @description  This endpoint is for simulation.
      */
