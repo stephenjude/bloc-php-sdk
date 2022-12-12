@@ -8,7 +8,9 @@ trait ManagesTransactions
 {
     public function getAllTransactions(array $queryOptions = []): array
     {
-        $transactions = $this->get("transactions", $queryOptions);
+        $queryString = http_build_query($queryOptions);
+
+        $transactions = $this->get("transactions?$queryString");
 
         return $this->transformCollection(
             collection:$transactions['data'],
