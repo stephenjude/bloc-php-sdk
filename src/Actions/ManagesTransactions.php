@@ -13,7 +13,7 @@ trait ManagesTransactions
         $transactions = $this->get("transactions?$queryString");
 
         return $this->transformCollection(
-            collection:$transactions['data'],
+            collection:$transactions['data'] ?? [],
             class:Transaction::class,
         );
     }
