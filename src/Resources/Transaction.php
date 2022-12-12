@@ -32,9 +32,9 @@ class Transaction extends ApiResource
 
     public string $metaData;
 
-    public string $reversal;
+    public bool $reversal;
 
     public string $paymentMethod;
 
-    public string $currentAccountBalance;
+    public int $currentAccountBalance;
 }
