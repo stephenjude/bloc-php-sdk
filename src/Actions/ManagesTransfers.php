@@ -12,13 +12,13 @@ trait ManagesTransfers
         string $bankCode,
         string $narration,
         array $metaData = [],
-    ) {
+    ): Transfer {
         $transfer = $this->post("transfers/balance", [
             'amount' => $amount,
-            'accountNumber' => $accountNumber,
-            'bankCode' => $bankCode,
+            'account_number' => $accountNumber,
+            'bank_code' => $bankCode,
             'narration' => $narration,
-            'metaData' => $metaData,
+            'meta_data' => $metaData,
         ]);
 
         return new Transfer($transfer['data'], $this);
