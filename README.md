@@ -1,4 +1,4 @@
-# An SDK to easily work with the BlocHQ API
+# SDK to easily work with the BlocHQ API
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/stephenjude/blochq-php-sdk.svg?style=flat-square)](https://packagist.org/packages/stephenjude/blochq-php-sdk)
 ![Tests](https://github.com/stephenjude/blochq-php-sdk/workflows/run-tests/badge.svg)
