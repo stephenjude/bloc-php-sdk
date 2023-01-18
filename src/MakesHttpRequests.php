@@ -37,10 +37,13 @@ trait MakesHttpRequests
         $response = $this->client->request(
             $verb,
             $uri,
-            empty($payload) ? [] : ['form_params' => $payload]
+            empty($payload) ? [] : [
+                'body' => json_encode($payload),
+                'content-type' => 'application/json'
+            ]
         );
 
-        if (! $this->isSuccessful($response)) {
+        if (!$this->isSuccessful($response)) {
             return $this->handleRequestError($response);
         }
 
@@ -51,7 +54,7 @@ trait MakesHttpRequests
 
     public function isSuccessful($response): bool
     {
-        if (! $response) {
+        if (!$response) {
             return false;
         }
 
