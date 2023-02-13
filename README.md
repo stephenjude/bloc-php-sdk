@@ -33,6 +33,8 @@ $blocHQ->createCollectionAccount();
 ```php 
 $account = $blocHQ->getAccountByAccountNumber(ACCOUNT_NUMBER);
 
+$account = $blocHQ->getAccountById(ID);
+
 $account->freeze();
 $account->unfreeze();
 
