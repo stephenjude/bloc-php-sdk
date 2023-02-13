@@ -14,6 +14,13 @@ trait ManagesAccounts
         return new CollectionAccount($account['data'], $this);
     }
 
+    public function getAccountById(string $id): Account
+    {
+        $account = $this->get("accounts/$id");
+
+        return new Account($account['data'], $this);
+    }
+
     public function getAccountByAccountNumber(string $accountNumber): Account
     {
         $account = $this->get("accounts/number/$accountNumber");
