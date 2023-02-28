@@ -12,7 +12,7 @@ class Transaction extends ApiResource
 
     public string $updatedAt;
 
-    public string $amount;
+    public int $amount;
 
     public string $reference;
 
