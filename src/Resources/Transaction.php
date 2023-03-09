@@ -30,7 +30,7 @@ class Transaction extends ApiResource
 
     public string $accountId;
 
-    public string $metaData;
+    public array $metaData;
 
     public bool $reversal;
 
